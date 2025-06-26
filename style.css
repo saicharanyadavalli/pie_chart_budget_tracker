@@ -1,0 +1,123 @@
+body {
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: #222;
+}
+
+.container {
+    background: #fff;
+    max-width: auto;
+    margin: 48px auto 0 auto;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(60, 120, 200, 0.10), 0 1.5px 4px rgba(0,0,0,0.04);
+    padding: 38px 32px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s;
+}
+
+.container:hover {
+    box-shadow: 0 12px 40px rgba(60, 120, 200, 0.13), 0 2px 8px rgba(0,0,0,0.06);
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #2a4365;
+    margin-bottom: 28px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    gap: 14px;
+    width: 100%;
+    margin-bottom: 24px;
+    justify-content: center;
+}
+
+form input[type="text"] {
+    flex: 1;
+    padding: 12px 14px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 1rem;
+    outline: none;
+    background: #f8fafc;
+    transition: border 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 2px rgba(60,120,200,0.03);
+}
+
+form input[type="text"]:focus {
+    border-color: #36A2EB;
+    box-shadow: 0 2px 8px rgba(54,162,235,0.10);
+    background: #fff;
+}
+
+form button {
+    background: linear-gradient(90deg, #36A2EB 0%, #4BC0C0 100%);
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 12px 22px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(54,162,235,0.08);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    letter-spacing: 0.5px;
+}
+
+form button:hover, form button:focus {
+    background: linear-gradient(90deg, #2779bd 0%, #319795 100%);
+    box-shadow: 0 4px 16px rgba(54,162,235,0.13);
+    transform: translateY(-2px) scale(1.03);
+}
+
+#expense-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px 0;
+    width: 100%;
+}
+
+#expense-list li {
+    background: linear-gradient(90deg, #f1f5f9 0%, #e2e8f0 100%);
+    margin-bottom: 10px;
+    padding: 12px 18px;
+    border-radius: 6px;
+    color: #2a4365;
+    font-size: 1.05rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(60,120,200,0.04);
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+#expenseChart {
+    margin-top: 12px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(54,162,235,0.10);
+    padding: 16px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 18px 4px;
+    }
+    form {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #expenseChart {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
