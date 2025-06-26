@@ -32,23 +32,6 @@ This is a simple and interactive **Budget Tracker** web application built with *
 
 ---
 
-## 📷 Screenshots
-
-*(You can add screenshots here if needed)*
-
----
-
-## 📂 File Structure
-
-```bash
-.
-├── index.html       # Main HTML structure
-├── style.css        # Styling and responsiveness
-├── script.js        # Core logic and chart handling
-```
-
----
-
 ## ✅ How to Use
 
 1. **Clone or Download** this repository.
